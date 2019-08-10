@@ -366,12 +366,17 @@ class Spatha(Device):
     product_id = 0x1824
     profiles = 3
 
+class TufGaming(Device):
+    product_id = 0x1898
+    profiles = 3
+
 
 class DeviceManager(object):
     device_classes = (
         Pugio,
         StrixImpact,
         Spatha,
+        TufGaming,
     )
 
     @classmethod
